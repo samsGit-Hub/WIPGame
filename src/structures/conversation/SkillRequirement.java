@@ -1,6 +1,6 @@
 package structures.conversation;
 
-import main.Player;
+import structures.character.Player;
 
 /*
  * This class handles blocking off options by a skill requirement.
