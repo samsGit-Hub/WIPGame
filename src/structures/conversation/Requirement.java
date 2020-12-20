@@ -1,4 +1,4 @@
-package structures;
+package structures.conversation;
 
 /*
  * Abstract class that supports anything in game

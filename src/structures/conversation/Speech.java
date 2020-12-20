@@ -1,11 +1,18 @@
-package structures;
+package structures.conversation;
 
 import java.util.HashMap;
 import java.util.Map.Entry;
 
+/*
+ * Speech holds what a character says to the player, as well as how the player
+ * can respond.
+ */
 public class Speech {
+	// Integer used for Speech linking.
 	private int identifier;
+	// String text representing what a character says.
 	private String text;
+	// Map holding response options, and the Speech-es they may link to.
 	private HashMap<Response, Speech> options;
 	
 	/*

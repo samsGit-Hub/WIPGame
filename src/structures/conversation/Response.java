@@ -1,4 +1,4 @@
-package structures;
+package structures.conversation;
 
 /*
  * Response represents the options the player has to respond

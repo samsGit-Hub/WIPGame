@@ -1,8 +1,8 @@
 package main;
 
-import structures.Response;
-import structures.SkillRequirement;
-import structures.Speech;
+import structures.conversation.Response;
+import structures.conversation.SkillRequirement;
+import structures.conversation.Speech;
 
 public class Driver {
 	public static void main (String[] args) {
