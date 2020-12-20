@@ -30,6 +30,20 @@ public class Response {
 	}
 	
 	/*
+	 * Returns a string version of this object for saving
+	 * and loading.
+	 * @return the String version of this object.
+	 */
+	public String serialize() {
+		String serializedObject = text + "{";
+		
+		// Serializes possible attached requirement.
+		serializedObject += requirement == null ? "NO REQ" : requirement.serialize();
+		
+		return serializedObject + "}";
+	}
+	
+	/*
 	 * Checks if the player can use this option.
 	 * @return true if no skill check, result of the
 	 * 	skill-check if there is one.
