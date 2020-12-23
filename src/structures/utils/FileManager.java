@@ -57,6 +57,17 @@ public class FileManager {
 	}
 	
 	private Speech buildSpeechFromFileExcerpt(ArrayList<String> lines) {
+		Speech sRet = null;
+		if (lines != null && lines.size() > 0) {
+			String[] firstLine = lines.get(0).split("]");
+			if (firstLine == null || firstLine.length != 2) return null;
+			sRet = new Speech(Integer.parseInt(firstLine[0].substring(1)), firstLine[2]);
+		}
 		
+		if (lines != null && lines.size() > 1) {
+			//add responses here.
+		}
+		
+		return sRet;
 	}
 }
